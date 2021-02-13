@@ -19,7 +19,7 @@ jobs:
     - name: build
       run: npm run build
     - name: Bundle
-      run: mkdir ./out && mkdir ./out/react-gotapp &&  mv build ./out/react-gotapp
+      run: mkdir ./out && mkdir ./out/react-gotapp &&  mv build/* ./out/react-gotapp
       
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
